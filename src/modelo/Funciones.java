@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
+import config.Config;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -11,10 +12,12 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
 
+import static config.Config.API_URL;
+
 public class Funciones {
 
-    private static final String API_KEY = "62d2f4826d85f49406fbca47";
-    private static final String API_URL = "https://v6.exchangerate-api.com/v6/" + API_KEY + "/latest/USD";
+    // private static final String API_KEY = "62d2f4826d85f49406fbca47";
+    //private static final String API_URL = "https://v6.exchangerate-api.com/v6/" + API_KEY + "/latest/USD";
 
     /**
      * Actualiza las tasas de conversión de las monedas usando una API externa.
@@ -28,6 +31,7 @@ public class Funciones {
 
         try {
             // Hacer la petición HTTP a la API
+
             URL url = new URL(API_URL);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
