@@ -10,7 +10,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.InputMismatchException;
 import java.util.List;
+import java.util.Scanner;
 
 import static config.Config.API_URL;
 
@@ -155,5 +157,36 @@ public class Funciones {
                 Elija una Opcion Valida:
                 ***************************************************************************************
                 """);
+    }
+
+    public int validaInt(Scanner scanner){
+        int opcion = 0;
+        boolean ingresoNumero = true;
+        while (ingresoNumero){
+            try {
+                opcion = scanner.nextInt();
+                scanner.nextLine();
+                ingresoNumero = false;
+            } catch (InputMismatchException e){
+                System.out.println("Tines que ingresar un numero!!!");
+                scanner.nextLine();
+            }
+        }
+        return opcion;
+    }
+    public double validaDouble(Scanner scanner){
+        double opcion = 0;
+        boolean ingresoNumero = true;
+        do {
+            try {
+                opcion = scanner.nextDouble();
+                scanner.nextLine();
+                ingresoNumero = false;
+            } catch (InputMismatchException e) {
+                System.out.println("Tines que ingresar un numero!!!");
+                scanner.nextLine();
+            }
+        } while (ingresoNumero);
+        return opcion;
     }
 }

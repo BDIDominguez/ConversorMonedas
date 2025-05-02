@@ -32,12 +32,12 @@ public class Main {
             double monto=0.00, resultado=0.00;
             do {
                 funciones.imprimirMenu();
-                opcion = scanner.nextInt();
-                scanner.nextLine();
+                //opcion = scanner.nextInt();
+                opcion = funciones.validaInt(scanner);
                 if (opcion != 7){
                     System.out.print("Ingresa el Monto a Convertir: ");
-                    monto = scanner.nextDouble();
-                    scanner.nextLine();
+                    monto = funciones.validaDouble(scanner);
+
                 }
                 switch (opcion) {
                     case 1:
