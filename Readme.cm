@@ -1,6 +1,6 @@
 # Conversor de Monedas
 
-Este proyecto es un conversor de monedas desarrollado en Java como parte del curso de programación. Permite convertir montos entre diferentes monedas utilizando tasas de cambio predefinidas.
+Este proyecto es un conversor de monedas desarrollado en Java como parte del curso de programación Alura Latan. Permite convertir montos entre diferentes monedas utilizando tasas de cambio obtenidos del API de https://app.exchangerate-api.com/.
 
 ## 🚀 Características
 
@@ -11,7 +11,7 @@ Este proyecto es un conversor de monedas desarrollado en Java como parte del cur
 ## 🛠️ Tecnologías Utilizadas
 
 - Java SE 17
-- HTTP para obtener los valores de las diferentes monedas.
+- Consulta a una API para obtener los valores de las diferentes monedas.
 
 ## 📦 Estructura del Proyecto
 
