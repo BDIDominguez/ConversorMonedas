@@ -5,13 +5,13 @@ Este proyecto es un conversor de monedas desarrollado en Java como parte del cur
 ## 🚀 Características
 
 - Conversión entre múltiples monedas (USD, EUR, ARS, etc.).
-- Interfaz gráfica sencilla para facilitar la interacción del usuario.
+- La interfaz es de consola para la interacción del usuario.
 - Validación de entradas para asegurar datos correctos.
 
 ## 🛠️ Tecnologías Utilizadas
 
-- Java SE 8
-- Swing para la interfaz gráfica
+- Java SE 17
+- HTTP para obtener los valores de las diferentes monedas.
 
 ## 📦 Estructura del Proyecto
 
@@ -44,8 +44,7 @@ java src.Conversor
 
 ## 📌 Notas
 
-- Las tasas de cambio son estáticas y pueden no reflejar valores actuales del mercado.
-- Para actualizaciones automáticas de tasas, se podría integrar una API externa en futuras versiones.
+- Las tasas de cambio son estáticas y pueden no reflejar ya que solo se consulta uva vez al iniciar el programa los valores actuales. mientras la app este en ejecusion se utiliza dicha info.
 
 ## 📄 Licencia
 
