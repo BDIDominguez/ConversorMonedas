@@ -1,0 +1,52 @@
+# Conversor de Monedas
+
+Este proyecto es un conversor de monedas desarrollado en Java como parte del curso de programación. Permite convertir montos entre diferentes monedas utilizando tasas de cambio predefinidas.
+
+## 🚀 Características
+
+- Conversión entre múltiples monedas (USD, EUR, ARS, etc.).
+- Interfaz gráfica sencilla para facilitar la interacción del usuario.
+- Validación de entradas para asegurar datos correctos.
+
+## 🛠️ Tecnologías Utilizadas
+
+- Java SE 8
+- Swing para la interfaz gráfica
+
+## 📦 Estructura del Proyecto
+
+```
+ConversorMonedas/
+├── src/
+│   ├── Conversor.java
+│   ├── Moneda.java
+│   └── Utilidades.java
+├── README.md
+└── ...
+```
+
+## 📝 Uso
+
+1. Clona el repositorio:
+```bash
+git clone https://github.com/BDIDominguez/ConversorMonedas.git
+```
+
+2. Compila el proyecto:
+```bash
+javac src/*.java
+```
+
+3. Ejecuta la aplicación:
+```bash
+java src.Conversor
+```
+
+## 📌 Notas
+
+- Las tasas de cambio son estáticas y pueden no reflejar valores actuales del mercado.
+- Para actualizaciones automáticas de tasas, se podría integrar una API externa en futuras versiones.
+
+## 📄 Licencia
+
+Este proyecto se encuentra bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
